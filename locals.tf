@@ -23,3 +23,12 @@ value = local.lastname
 output "printcity"{
 value = local.city
 }
+output "printlengthfn"{
+value = local.lengthfn
+}
+output "printlengthlast"{
+value = local.lengthlast
+}
+output "printlingthcit"{
+value = local.lengthcit
+}
