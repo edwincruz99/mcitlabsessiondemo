@@ -36,3 +36,16 @@ variable "environment"{
  type=string
  default="staging"
 }
+ variable"company_name"{ 
+        type=string
+        default="MCIT"
+}
+variable"years of service"{
+type=number
+default=11
+}
+variable"ifelsecheck"{
+type=bool
+default=true
+}
+
