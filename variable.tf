@@ -48,4 +48,14 @@ variable"ifelsecheck"{
 type=bool
 default=true
 }
+output"company_name_output"{
+value+var.company_name
+}
+output"years_of_service_output"{
+value=var.years_of_service
+}
+
+output"ifelsecheck_output"{
+value=var.ifelsecheck
+}
 
