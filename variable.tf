@@ -40,7 +40,7 @@ variable "environment"{
         type=string
         default="MCIT"
 }
-variable"years of service"{
+variable"years_of_service"{
 type=number
 default=11
 }
