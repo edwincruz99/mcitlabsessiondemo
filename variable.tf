@@ -72,3 +72,10 @@ variable "favoritefood"{
 output "favoritefoodlist"{
     value=[for favoritefood in var.favoritefood:favoritefood ]
 }
+variable "Resto"{
+  type =list(string)
+  default=["el rey del taco","Mcdonalds","pizza pizza","mi casa","wendys"]
+}
+output "Resto"{
+    value=[for Resto in var.Resto:Resto ]
+}
