@@ -65,3 +65,10 @@ variable "summersports"{
 output "summersportslist"{
     value=[for summersport in var.summersports:summersport ]
 }
+variable "favoritefood"{
+  type =list(string)
+  default=["pupusas","tacos","pizza","carne asada","ribs"]
+}
+output "favoritefoodlist"{
+    value=[for favoritefood in var.favoritefood:favoritefood ]
+}
