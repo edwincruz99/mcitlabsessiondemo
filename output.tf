@@ -1,3 +1,3 @@
-output"wintersportlist"{
-value=[for sport in local.wintersportlist:sport]
+output"winterlistofsport"{
+value=[for sport in local.winterlistofsport:sport]
 }
