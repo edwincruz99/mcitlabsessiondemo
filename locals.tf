@@ -17,6 +17,8 @@ locals{
         lengthlnmk3=length(local.landmark3)
         lengthlnmk4=length(local.landmark4)
         lengthlnmk5=length(local.landmark5)
+        total_output=["150","150","150"]
+        total_output1=["4","5","1","2","3","9"]
 }
 output "print"{
 value = local.servicename
@@ -71,4 +73,10 @@ value = local.lengthlnmk4
 }
 output "printlengthlnmk5"{
 value = local.lengthlnmk5
+}
+output "sumoofthreenumbers"{
+value=sum([for numberoutput in local.total_output:tonumber(numberoutput)])
+}
+output"sumofsixnumers"{
+value=sum([for numberoutput in local.total_output:tonumber(numberoutput)])
 }
