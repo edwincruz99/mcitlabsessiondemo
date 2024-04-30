@@ -17,6 +17,7 @@ locals{
         lengthlnmk3=length(local.landmark3)
         lengthlnmk4=length(local.landmark4)
         lengthlnmk5=length(local.landmark5)
+        total_output = ["150", "150", "150"]
 }
 output "print"{
 value = local.servicename
