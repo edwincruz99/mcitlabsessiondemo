@@ -28,3 +28,8 @@ output "join_example2" {
 output "reverse_example2" {
   value = join("", reverse(split("", var.original_string2)))
 }
+
+variable "numbers" {
+default=1,2,3
+}
+
