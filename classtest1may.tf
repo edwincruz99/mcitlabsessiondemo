@@ -20,7 +20,7 @@ output "lowercase_string" {
 
 # Function 4: Replace "Hello" with "Hi"
 output "replaced_string" {
-  value = replace(var.original_string, "Montreal College Information Technology", "McGill University")
+  value = replace(var.original_string, "edwin cruz", "cruz edwin")
 }
 
 # Function 5: Concatenate with another string
@@ -44,7 +44,7 @@ output "split_example" {
 
 # Function 8: Join a list of strings into a single string with a separator
 variable "string_list" {
-  default = ["Montreal", "College","Information","Technology"]
+  default = ["edwin", "cruz"]
 }
 
 output "join_example" {
@@ -66,14 +66,14 @@ output "reverse_example" {
 }
 
 locals {
-  contains_keyword = contains(split(" ", var.original_string), "Montreal")
+  contains_keyword = contains(split(" ", var.original_string), "edwin")
 }
 
 
 output "string_contains_no_sample" {
-  value = local.contains_keyword ? "String contains 'Mcit'" : "String does not contain 'Mcit'"
+  value = local.contains_keyword ? "String contains 'eac'" : "String does not contain 'eac'"
 }
 
 output "string_contains_sample" {
-  value = local.contains_keyword ? "String contains 'Montreal'" : "String does not contain 'Montreal'"
+  value = local.contains_keyword ? "String contains 'edwin'" : "String does not contain 'edwin'"
 }
