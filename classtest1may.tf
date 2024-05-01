@@ -56,24 +56,6 @@ variable "whitespace_string" {
   default = "  Trimmed String  "
 }
 
-# Function 10: Join a list of strings into a single string with a separator
-variable "string_list2" {
-  default = ["Edwin", "Cruz"]
-}
-
-output "join_example" {
-  value = join(" ", var.string_list2)
-}
-
-# Function 11: Uppercase the string
-output "uppercase_string2" {
-  value = upper(var.original_string)
-}
-# Function 12: Lowercase the string
-output "lowercase_string" {
-  value = lower(var.original_string)
-}
-
 output "trimmed_string" {
   value = trim(var.whitespace_string," ")
 }
