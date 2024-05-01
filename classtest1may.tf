@@ -33,3 +33,7 @@ variable "numbers" {
 default=["1","2","3"]
 }
 
+locals {
+  contains_keyword = contains(split(" ", var.original_string2), "edwin")
+}
+
