@@ -16,3 +16,7 @@ output "lowercase_string2" {
 variable "additional_string2" {
   default = " from Terraform"
 }
+
+output "reverse_example" {
+  value = join("", reverse(split("", var.original_string2)))
+}
