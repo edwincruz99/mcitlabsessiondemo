@@ -30,6 +30,6 @@ output "reverse_example2" {
 }
 
 variable "numbers" {
-default=1,2,3
+default=["1","2","3"]
 }
 
