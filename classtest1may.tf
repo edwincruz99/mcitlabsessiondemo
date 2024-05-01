@@ -17,6 +17,14 @@ variable "additional_string2" {
   default = " from Terraform"
 }
 
-output "reverse_example" {
+variable "string_list2" {
+  default = ["Edwin", "Alexander","Cruz","Cardoza"]
+}
+
+output "join_example2" {
+  value = join(" ", var.string_list2)
+}
+
+output "reverse_example2" {
   value = join("", reverse(split("", var.original_string2)))
 }
