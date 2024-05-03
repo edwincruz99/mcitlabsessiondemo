@@ -7,7 +7,7 @@ variable "countries_to_visit" {
     default= "Egip+Italy+Colombia+Argentina+New Zeland"
 }
 
-output "string_length2" {
+output "string_length3" {
   value = length(var.countries_to_visit)
 }
 
