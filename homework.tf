@@ -7,7 +7,7 @@ variable "countries_to_visit" {
     default= "Egip+Italy+Colombia+Argentina+New Zeland"
 }
 
-output "string_list3"{
+output "string_list3_output"{
     value=var.string-list3
 }
 
