@@ -6,5 +6,8 @@ variable "countries_to_visit" {
     type=string
     default= "Egip+Italy+Colombia+Argentina+New Zeland"
 }
-  
+
+output "string_list3"{
+    value=var.string-list3
+}
 
