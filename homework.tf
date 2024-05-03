@@ -2,7 +2,7 @@ variable "countries_to_visit" {
 type=string
 }
 
-output"countries_to_visi"{
+output"countries_to_visit"{
 value=var.countries_to_visit
 }
 
