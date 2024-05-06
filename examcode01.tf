@@ -1,6 +1,6 @@
 variable "exam_list" {
   default = ["azure", "aws","gcp"]
 }
-output "join_example" {
+output "exam_q13" {
   value = join(" ", var.exam_list)
 }
