@@ -4,4 +4,9 @@ variable "exam_list" {
 output "exam_q13" {
   value = join(" ", var.exam_list)
 }
+> contains(["a", "b", "c"], "a")
+true
+> contains(["a", "b", "c"], "d")
+false
+
 
