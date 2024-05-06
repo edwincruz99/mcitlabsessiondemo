@@ -1,12 +1,8 @@
 variable "exam_list" {
-  default = ["azure", "aws","gcp"]
+  default = ["azure", "aws","gcp"] add  ["alibaba","ibm"]
 }
 output "exam_q13" {
   value = join(" ", var.exam_list)
 }
-> contains(["a", "b", "c"], "a")
-true
-> contains(["a", "b", "c"], "d")
-false
 
 
