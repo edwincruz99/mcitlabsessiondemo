@@ -5,3 +5,7 @@ resource "azurerm_resource_group" "myazureresourcegroup" {
   name     = "My_first_terra_Group"
   location = "Canada Central"
 }
+resource "azurerm_resource_group" "myazureresourcegroup" {
+  name     = "My_first_terra_Group2"
+  location = "Canada east"
+}
